@@ -14,6 +14,6 @@ Ai ya bu projenin hangi sorunları çözeceğini sordum cevap olarak
 Dolaptaki malzemeleri değerlendirememe ve gıda israfı
 Karmaşık ve güvenilmez tarifler
 Bütçe ve zaman kısıtı
-Kişiselleştirilmiş beslenme ihtiyaçları
+Kişiselleştirilmiş beslenme ihtiyaçları.
 
 
