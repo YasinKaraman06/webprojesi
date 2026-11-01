@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TazeSofra | Herkese Uygun Lezzetler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i> Taze<span>Sofra</span>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Tarif ara... (Örn: Antrikot)">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#" id="nav-home" class="active">Anasayfa</a>
+            <a href="#" id="nav-fav" class="fav-link">
+                <i class="fa-solid fa-heart"></i> Favoriler 
+                <span id="fav-count" class="badge-count">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <!-- Filtreleme Alanı -->
+        <aside class="sidebar">
+            <h3><i class="fa-solid fa-filter"></i> Filtrele</h3>
+            
+            <div class="filter-group">
+                <h4>Beslenme Tipi</h4>
+                <label class="custom-checkbox"><input type="checkbox" value="tumu" checked><span class="checkmark"></span> Tümü</label>
+                <label class="custom-checkbox"><input type="checkbox" value="vejetaryen"><span class="checkmark"></span> Vejetaryen</label>
+                <label class="custom-checkbox"><input type="checkbox" value="glutensiz"><span class="checkmark"></span> Glutensiz</label>
+                <label class="custom-checkbox"><input type="checkbox" value="etli"><span class="checkmark"></span> Etli Yemekler</label>
+            </div>
+            
+            <button class="filter-btn">Uygula</button>
+        </aside>
+
+        <!-- Tarifler -->
+        <main class="recipe-grid" id="recipe-list">
+            
+            <!-- Etli Tarif -->
+            <div class="recipe-card" data-id="antrikot" data-category="etli">
+                <div class="img-container">
+                    <!-- Görsel ismi tam istediğin gibi güncellendi -->
+                    <img src="images.jpg" alt="Fırında Antrikot">
+                    <span class="tag tag-orange">Etli</span>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-info">
+                    <h3 class="recipe-title">Fırında Baharatlı Antrikot</h3>
+                    <p>Özel marinasyonla hazırlanmış, dışı çıtır içi sulu enfes fırın antrikot.</p>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star" data-value="1"></i>
+                        <i class="fa-regular fa-star" data-value="2"></i>
+                        <i class="fa-regular fa-star" data-value="3"></i>
+                        <i class="fa-regular fa-star" data-value="4"></i>
+                        <i class="fa-regular fa-star" data-value="5"></i>
+                        <span class="rating-count" data-count="34">(34 kişi puanladı)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vejetaryen Tarif -->
+            <div class="recipe-card" data-id="salata" data-category="vejetaryen">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Avokadolu Salata">
+                    <span class="tag tag-green">Vejetaryen</span>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-info">
+                    <h3 class="recipe-title">Avokadolu Taze Kase</h3>
+                    <p>Mevsim yeşillikleri, nohut ve özel avokado sosuyla doyurucu bir bitkisel öğün.</p>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star" data-value="1"></i>
+                        <i class="fa-regular fa-star" data-value="2"></i>
+                        <i class="fa-regular fa-star" data-value="3"></i>
+                        <i class="fa-regular fa-star" data-value="4"></i>
+                        <i class="fa-regular fa-star" data-value="5"></i>
+                        <span class="rating-count" data-count="128">(128 kişi puanladı)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glutensiz Tarif -->
+            <div class="recipe-card" data-id="makarna" data-category="glutensiz">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80" alt="Glutensiz Tavuklu Makarna">
+                    <span class="tag tag-green">Glutensiz</span>
+                    <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-info">
+                    <h3 class="recipe-title">Glutensiz Pesto Soslu Penne</h3>
+                    <p>Mısır unundan yapılmış glutensiz makarna ve taze fesleğenli hafif pesto sos.</p>
+                    
+                    <div class="rating">
+                        <i class="fa-regular fa-star" data-value="1"></i>
+                        <i class="fa-regular fa-star" data-value="2"></i>
+                        <i class="fa-regular fa-star" data-value="3"></i>
+                        <i class="fa-regular fa-star" data-value="4"></i>
+                        <i class="fa-regular fa-star" data-value="5"></i>
+                        <span class="rating-count" data-count="56">(56 kişi puanladı)</span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Tarif Detay Açılır Penceresi -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" src="" alt="Tarif Görseli">
+            <div class="modal-text">
+                <h2 id="modal-title">Tarif Adı</h2>
+                
+                <div class="modal-details">
+                    <div class="ingredients">
+                        <h3><i class="fa-solid fa-basket-shopping"></i> Malzemeler</h3>
+                        <ul id="modal-ingredients"></ul>
+                    </div>
+                    <div class="steps">
+                        <h3><i class="fa-solid fa-utensils"></i> Hazırlanışı</h3>
+                        <p id="modal-steps"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
