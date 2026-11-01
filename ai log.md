@@ -17,9 +17,9 @@ Bütçe ve zaman kısıtı
 Kişiselleştirilmiş beslenme ihtiyaçları.
 
 
- TazeSofra - (AI Log)
+# TazeSofra - Yapay Zeka Geliştirme Günlüğü (AI Log)
 
-Geliştirici: Yasin Karaman
+**Geliştirici:** Yasin
 **Ders:** Web Proje Yönetimi
 **Kullanılan AI Aracı:** Google Gemini
 **Proje Adı:** TazeSofra Web Arayüzü
@@ -54,5 +54,3 @@ Bu projede, farklı beslenme tiplerine (Etli, Vejetaryen, Glutensiz) hitap eden,
 
 ## Sonuç ve Kazanımlar
 Yapay zeka doğrudan bitmiş bir proje vermek yerine, verilen spesifik komutlarla bir "kodlama partneri" olarak kullanılmıştır. Projenin mimarisi, klasör düzeni, görsel varlıkları ve versiyon kontrol (GitHub) aşamaları tamamen manuel olarak yönetilmiştir.
-
-
