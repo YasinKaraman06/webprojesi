@@ -17,9 +17,9 @@ Bütçe ve zaman kısıtı
 Kişiselleştirilmiş beslenme ihtiyaçları.
 
 
-# TazeSofra - (AI Log)
+ TazeSofra - (AI Log)
 
-**Geliştirici:** Yasin Karaman
+Geliştirici: Yasin Karaman
 **Ders:** Web Proje Yönetimi
 **Kullanılan AI Aracı:** Google Gemini
 **Proje Adı:** TazeSofra Web Arayüzü
